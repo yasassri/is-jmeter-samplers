@@ -10,7 +10,9 @@ import org.apache.jmeter.testelement.TestStateListener;
  */
 public class IDPSampler extends AbstractSampler implements TestStateListener {
     @Override public SampleResult sample(Entry entry) {
-        return null;
+        SampleResult result = new SampleResult();
+
+        return result;
     }
 
     @Override public void testStarted() {
